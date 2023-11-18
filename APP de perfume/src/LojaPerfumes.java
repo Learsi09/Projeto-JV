@@ -18,7 +18,7 @@ import java.util.Scanner;
                 System.out.println("7. Voltar ao menu principal");
 
                 int opcao = scanner.nextInt();
-                scanner.nextLine(); // Limpar o buffer do scanner
+                scanner.nextLine();
 
                 switch (opcao) {
                     case 1:
@@ -31,14 +31,12 @@ import java.util.Scanner;
                     case 2:
                         System.out.println("Seu pedido está a caminho ou já recebeu o produto?");
                         String statusPedido = scanner.nextLine();
-                        // Lógica para verificar o status do pedido
                         break;
                     case 3:
                         System.out.println("Qual produto você deseja trocar?");
                         String produtoAntigo = scanner.nextLine();
                         System.out.println("Qual produto você deseja para a troca?");
                         String novoProduto = scanner.nextLine();
-                        // Lógica para troca de produto
                         break;
                     case 4:
                         System.out.println("Seu pedido não foi entregue. Deseja cancelar a compra? (sim/não)");
@@ -55,7 +53,7 @@ import java.util.Scanner;
                         System.out.println("2. Cartão");
                         System.out.println("3. Boleto");
                         int formaPagamento = scanner.nextInt();
-                        scanner.nextLine(); // Limpar o buffer do scanner
+                        scanner.nextLine();
 
                         switch (formaPagamento) {
                             case 1:
@@ -77,7 +75,7 @@ import java.util.Scanner;
                     case 6:
                         System.out.println("Qual o motivo do cancelamento?");
                         String motivoCancelamento = scanner.nextLine();
-                        System.out.println("Sentimos muito pelo ocorrido. Esperamos que compre novamente!");
+                        System.out.println("Sentimos muito pelo ocorrido, seu dinheiro será reembolsado. Esperamos que compre novamente!");
                         break;
                     case 7:
                         System.out.println("Voltando ao menu principal...");
